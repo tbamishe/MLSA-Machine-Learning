@@ -1,4 +1,5 @@
-def luhns_algorithm(card_no):
+def luhns_algorithm():
+    card_no = int(input("Enter Card Number: "))
     card = [int(no) for no in str(card_no)] 
     card.reverse()
 
@@ -21,5 +22,4 @@ def luhns_algorithm(card_no):
     is_valid = (total % 10) == 0
     return is_valid
 
-result = luhns_algorithm("23627398")
-print(result)
+luhns_algorithm()
